@@ -5,9 +5,11 @@ from math import sqrt
 
 def isprime(p):
 
-    # votre code ici
-
-    pass
+    for i in range(2, int(sqrt(p)) + 1):
+        if p % i == 0:
+            return False
+    else:   
+        return True
 
 #### Fonction principale
 
